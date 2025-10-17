@@ -1,0 +1,14 @@
+{
+  "method": "POST",
+  "url": "https://imp.zjydit.com/api/task/template/delete",
+  "status_code": 200,
+  "reason": "",
+  "request_params": {
+    "id": 182
+  },
+  "request_json": null,
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200
+  }
+}

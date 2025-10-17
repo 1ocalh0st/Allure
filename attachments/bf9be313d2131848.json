@@ -1,0 +1,10 @@
+{
+  "case_id": "TC22",
+  "test": "test_task_execute_invite",
+  "title": "邀请新执行人",
+  "objective": "验证 /task/execute/invite 可新增执行人。",
+  "method": "POST",
+  "path": "/task/execute/invite",
+  "precondition": "任务存在，可邀请的用户具备执行权限。",
+  "expected": "响应 200，返回成功消息。"
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "TC01",
+  "test": "test_task_query_returns_table_data",
+  "title": "查询事项任务列表返回分页数据",
+  "objective": "验证 /task/query 能够返回分页统计信息与 rows 列表。",
+  "method": "POST",
+  "path": "/task/query",
+  "precondition": "已获取有效 Authorization；系统中存在至少一条事项任务。",
+  "expected": "响应 200 且包含 total/pageNum/pageSize 字段以及 rows 数组。"
+}

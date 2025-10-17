@@ -1,0 +1,59 @@
+{
+  "method": "POST",
+  "url": "https://imp.zjydit.com/api/task/template/update",
+  "status_code": 200,
+  "reason": "",
+  "request_params": null,
+  "request_json": {
+    "id": 181,
+    "name": "自动化模板1760678854-更新",
+    "task": {
+      "id": null,
+      "name": "自动化模板1760678854-更新",
+      "type": "行政综合事项",
+      "description": null,
+      "createDateTime": null,
+      "startDate": null,
+      "endDate": null,
+      "content": null,
+      "target": null,
+      "remark": null,
+      "initiatorId": null,
+      "initiator": null,
+      "status": null,
+      "completeDateTime": null,
+      "tags": null,
+      "attaches": null,
+      "executes": null,
+      "auditInfos": null,
+      "auditLogs": null,
+      "copyerList": null,
+      "logs": null,
+      "projects": null,
+      "enableAutoMessage": null,
+      "hours": null,
+      "scheduledTaskId": null,
+      "parentId": null,
+      "children": null,
+      "button": null,
+      "overTime": null,
+      "config": {
+        "executorAutoSubmit": false,
+        "anyExecuteSubmittedToNext": false,
+        "onStartToExecutorsMessage": "${taskName}任务等待执行",
+        "onStartCCMessage": "${taskName}任务已开始",
+        "onEndCCMessage": "${taskName}任务已结束",
+        "autoRemindMessage": "${taskName}尚未提交",
+        "initiatorCanChangeExecutor": true,
+        "executorCanInviteNewExecutor": true,
+        "executorCanStartSubTask": false,
+        "initiatorCanCompleteTask": true
+      }
+    },
+    "order": 1
+  },
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200
+  }
+}

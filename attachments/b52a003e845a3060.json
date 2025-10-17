@@ -1,0 +1,10 @@
+{
+  "case_id": "TC12",
+  "test": "test_task_open",
+  "title": "重新打开任务",
+  "objective": "验证 /task/open 可将任务状态恢复为进行中。",
+  "method": "POST",
+  "path": "/task/open",
+  "precondition": "任务存在且可被重新打开。",
+  "expected": "响应 200，AjaxResult 表示操作成功。"
+}

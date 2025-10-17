@@ -1,0 +1,29 @@
+{
+  "method": "POST",
+  "url": "https://imp.zjydit.com/api/task/add",
+  "status_code": 200,
+  "reason": "",
+  "request_params": null,
+  "request_json": {
+    "name": "自动化任务-1760678858",
+    "type": "自动化测试",
+    "startDate": "2025-10-17",
+    "endDate": "2025-10-17",
+    "content": "接口自动化尝试创建任务",
+    "target": "验证创建接口的响应结构",
+    "enableAutoMessage": false,
+    "config": {
+      "anyExecuteSubmittedToNext": false,
+      "executorAutoSubmit": false
+    },
+    "executes": [
+      {
+        "executorId": "17585011179956000"
+      }
+    ]
+  },
+  "response_json": {
+    "msg": "发生未知异常",
+    "code": 400
+  }
+}

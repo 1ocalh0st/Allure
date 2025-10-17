@@ -1,0 +1,10 @@
+{
+  "case_id": "TC10",
+  "test": "test_task_template_update",
+  "title": "更新任务模板",
+  "objective": "验证 /task/template/update 能修改模板名称等基础信息。",
+  "method": "POST",
+  "path": "/task/template/update",
+  "precondition": "存在可编辑模板。",
+  "expected": "响应 200，返回成功消息。"
+}

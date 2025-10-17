@@ -1,0 +1,10 @@
+{
+  "case_id": "TC25",
+  "test": "test_task_add_requires_complete_payload",
+  "title": "创建任务接口的必填校验",
+  "objective": "验证 /task/add 对缺失信息的校验逻辑。",
+  "method": "POST",
+  "path": "/task/add",
+  "precondition": "提供最小化任务 payload；部分字段缺失。",
+  "expected": "响应 200 或 400，但返回结构符合 AjaxResult。"
+}

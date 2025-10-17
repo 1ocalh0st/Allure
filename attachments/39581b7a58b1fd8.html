@@ -1,0 +1,39 @@
+
+    <table border="1" cellpadding="4" cellspacing="0" style="border-collapse: collapse;">
+      <thead style="background-color:#f2f2f2;">
+        <tr>
+          <th>Case ID</th>
+          <th>用例标题</th>
+          <th>HTTP 方法</th>
+          <th>接口路径</th>
+          <th>测试目标</th>
+          <th>前置条件</th>
+          <th>预期结果</th>
+        </tr>
+      </thead>
+      <tbody>
+    <tr><td>TC01</td><td>查询事项任务列表返回分页数据</td><td>POST</td><td>/task/query</td><td>验证 /task/query 能够返回分页统计信息与 rows 列表。</td><td>已获取有效 Authorization；系统中存在至少一条事项任务。</td><td>响应 200 且包含 total/pageNum/pageSize 字段以及 rows 数组。</td></tr>
+<tr><td>TC02</td><td>查询事项任务详情</td><td>GET</td><td>/task/detail</td><td>验证 /task/detail 可返回指定任务完整信息。</td><td>存在可访问的任务 ID。</td><td>响应 200，data.id 与请求一致且包含 executes 列表。</td></tr>
+<tr><td>TC03</td><td>查询事项任务详情（无子任务树）</td><td>GET</td><td>/task/detail/noTree</td><td>验证 /task/detail/noTree 返回任务基础信息。</td><td>存在可访问的任务 ID。</td><td>响应 200，返回 AjaxResult 格式且 data 字段存在。</td></tr>
+<tr><td>TC04</td><td>查询任务执行人与审批人信息</td><td>GET</td><td>/task/queryExecute</td><td>验证 /task/queryExecute 返回执行人列表。</td><td>任务存在，且已分配执行人。</td><td>响应 200，data 为执行人/审批人信息数组。</td></tr>
+<tr><td>TC05</td><td>执行记录反查任务</td><td>GET</td><td>/task/executeIdToTaskId</td><td>验证 /task/executeIdToTaskId 可通过执行记录 ID 获取任务 ID。</td><td>任务存在执行记录。</td><td>响应 200 且 data 等于目标任务 ID。</td></tr>
+<tr><td>TC06</td><td>催办任务</td><td>POST</td><td>/task/urge</td><td>验证 /task/urge 可向执行人发送催办请求。</td><td>任务处于可催办状态，存在执行人。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC07</td><td>更新任务基本信息</td><td>POST</td><td>/task/update</td><td>验证 /task/update 能成功提交任务信息，即使内容未改动。</td><td>任务详情可查询且具有必填字段。</td><td>响应 200，AjaxResult 表示更新成功。</td></tr>
+<tr><td>TC08</td><td>查询任务模板列表</td><td>GET</td><td>/task/template/query</td><td>验证 /task/template/query 返回模板集合。</td><td>系统中存在至少一个任务模板。</td><td>响应 200，data 为模板列表。</td></tr>
+<tr><td>TC09</td><td>新增任务模板</td><td>POST</td><td>/task/template/add</td><td>验证 /task/template/add 可基于已有模板新增条目。</td><td>具备模板示例用于复制生成新模板。</td><td>响应 200，新增模板可在后续查询中检索到。</td></tr>
+<tr><td>TC10</td><td>更新任务模板</td><td>POST</td><td>/task/template/update</td><td>验证 /task/template/update 能修改模板名称等基础信息。</td><td>存在可编辑模板。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC11</td><td>删除任务模板</td><td>POST</td><td>/task/template/delete</td><td>验证 /task/template/delete 可移除指定模板。</td><td>存在可删除的模板 ID。</td><td>响应 200，模板自列表中移除。</td></tr>
+<tr><td>TC12</td><td>重新打开任务</td><td>POST</td><td>/task/open</td><td>验证 /task/open 可将任务状态恢复为进行中。</td><td>任务存在且可被重新打开。</td><td>响应 200，AjaxResult 表示操作成功。</td></tr>
+<tr><td>TC13</td><td>关闭任务后恢复</td><td>POST</td><td>/task/close</td><td>验证 /task/close 能关闭任务且事后可以重新打开。</td><td>任务存在并允许关闭。</td><td>响应 200，随后通过 /task/open 可恢复状态。</td></tr>
+<tr><td>TC14</td><td>完结任务后恢复</td><td>POST</td><td>/task/end</td><td>验证 /task/end 能完结任务且可重新打开。</td><td>任务存在并允许完结。</td><td>响应 200，随后通过 /task/open 可恢复执行。</td></tr>
+<tr><td>TC15</td><td>完成任务后恢复</td><td>POST</td><td>/task/complete</td><td>验证 /task/complete 能标记完成并可重新激活任务。</td><td>任务存在并允许完成。</td><td>响应 200，随后通过 /task/open 可恢复执行。</td></tr>
+<tr><td>TC16</td><td>审批任务通过</td><td>POST</td><td>/task/audit</td><td>验证 /task/audit 能提交审批通过操作。</td><td>任务存在待审批记录，当前用户具备审批权限。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC17</td><td>撤销审批结果</td><td>POST</td><td>/task/audit/cancel</td><td>验证 /task/audit/cancel 能撤销上一审批动作。</td><td>任务存在可撤销的审批记录。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC18</td><td>执行人提交执行记录</td><td>POST</td><td>/task/execute/submit</td><td>验证 /task/execute/submit 可提交执行结果（若条件不足，将返回业务校验提示）。</td><td>任务存在执行记录且当前用户为执行人。</td><td>响应 200 或 400 且结构符合 AjaxResult。</td></tr>
+<tr><td>TC19</td><td>撤回执行提交</td><td>POST</td><td>/task/execute/submit/revoke</td><td>验证 /task/execute/submit/revoke 可撤回指定执行提交。</td><td>执行记录存在且允许撤回。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC20</td><td>保存执行备注与附件</td><td>POST</td><td>/task/execute/attachAndComment/save</td><td>验证 /task/execute/attachAndComment/save 能提交执行说明（若缺少必填附件可能返回业务提示）。</td><td>执行记录存在。</td><td>响应 200 或 400 且结构符合 AjaxResult。</td></tr>
+<tr><td>TC21</td><td>更换执行人</td><td>POST</td><td>/task/execute/change</td><td>验证 /task/execute/change 可将执行人切换为其他用户。</td><td>任务至少有两个执行人供切换。</td><td>响应 200，并可恢复为原执行人。</td></tr>
+<tr><td>TC22</td><td>邀请新执行人</td><td>POST</td><td>/task/execute/invite</td><td>验证 /task/execute/invite 可新增执行人。</td><td>任务存在，可邀请的用户具备执行权限。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC23</td><td>移除执行人并恢复</td><td>POST</td><td>/task/execute/remove</td><td>验证 /task/execute/remove 可移除执行人且事后可重新邀请。</td><td>任务存在多个执行人。</td><td>响应 200，随后重新邀请成功。</td></tr>
+<tr><td>TC24</td><td>新增抄送人</td><td>POST</td><td>/task/copyer/add</td><td>验证 /task/copyer/add 可添加抄送用户。</td><td>任务存在；提供的用户可以作为抄送人。</td><td>响应 200，返回成功消息。</td></tr>
+<tr><td>TC25</td><td>创建任务接口的必填校验</td><td>POST</td><td>/task/add</td><td>验证 /task/add 对缺失信息的校验逻辑。</td><td>提供最小化任务 payload；部分字段缺失。</td><td>响应 200 或 400，但返回结构符合 AjaxResult。</td></tr></tbody></table>

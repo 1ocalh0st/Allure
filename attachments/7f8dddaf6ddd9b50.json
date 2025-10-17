@@ -1,0 +1,10 @@
+{
+  "case_id": "TC18",
+  "test": "test_task_execute_submit",
+  "title": "执行人提交执行记录",
+  "objective": "验证 /task/execute/submit 可提交执行结果（若条件不足，将返回业务校验提示）。",
+  "method": "POST",
+  "path": "/task/execute/submit",
+  "precondition": "任务存在执行记录且当前用户为执行人。",
+  "expected": "响应 200 或 400 且结构符合 AjaxResult。"
+}

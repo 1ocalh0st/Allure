@@ -1,0 +1,10 @@
+{
+  "case_id": "TC19",
+  "test": "test_task_execute_revoke",
+  "title": "撤回执行提交",
+  "objective": "验证 /task/execute/submit/revoke 可撤回指定执行提交。",
+  "method": "POST",
+  "path": "/task/execute/submit/revoke",
+  "precondition": "执行记录存在且允许撤回。",
+  "expected": "响应 200，返回成功消息。"
+}

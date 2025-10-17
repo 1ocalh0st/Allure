@@ -1,0 +1,39 @@
+{
+  "method": "GET",
+  "url": "https://imp.zjydit.com/api/task/queryExecute",
+  "status_code": 200,
+  "reason": "",
+  "request_params": {
+    "id": 113
+  },
+  "request_json": null,
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200,
+    "data": [
+      {
+        "userId": "17585011179956000",
+        "name": "柯锦鸿",
+        "title": "测试工程师",
+        "jobNumber": "170",
+        "active": true,
+        "admin": false,
+        "avatar": "https://static-legacy.dingtalk.com/media/lADPBE1XZGmS9h_NA_DNAvM_755_1008.jpg",
+        "boss": false,
+        "email": null,
+        "hiredDate": 1758470400000,
+        "realAuthed": true,
+        "remark": "",
+        "senior": false,
+        "telephone": null,
+        "unionid": "2Vh9Nlq6jxrSlwQOdkuVBwiEiE",
+        "workPlace": "",
+        "depts": null,
+        "permissions": null,
+        "roles": null,
+        "leave": false,
+        "onboardingDate": "2025-09-22"
+      }
+    ]
+  }
+}

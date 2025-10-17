@@ -1,0 +1,10 @@
+{
+  "case_id": "TC03",
+  "test": "test_task_detail_no_tree",
+  "title": "查询事项任务详情（无子任务树）",
+  "objective": "验证 /task/detail/noTree 返回任务基础信息。",
+  "method": "GET",
+  "path": "/task/detail/noTree",
+  "precondition": "存在可访问的任务 ID。",
+  "expected": "响应 200，返回 AjaxResult 格式且 data 字段存在。"
+}

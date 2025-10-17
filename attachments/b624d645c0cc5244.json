@@ -1,0 +1,10 @@
+{
+  "case_id": "TC02",
+  "test": "test_task_detail",
+  "title": "查询事项任务详情",
+  "objective": "验证 /task/detail 可返回指定任务完整信息。",
+  "method": "GET",
+  "path": "/task/detail",
+  "precondition": "存在可访问的任务 ID。",
+  "expected": "响应 200，data.id 与请求一致且包含 executes 列表。"
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "TC06",
+  "test": "test_task_urge",
+  "title": "催办任务",
+  "objective": "验证 /task/urge 可向执行人发送催办请求。",
+  "method": "POST",
+  "path": "/task/urge",
+  "precondition": "任务处于可催办状态，存在执行人。",
+  "expected": "响应 200，返回成功消息。"
+}

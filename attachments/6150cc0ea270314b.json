@@ -1,0 +1,18 @@
+{
+  "method": "POST",
+  "url": "https://imp.zjydit.com/api/task/urge",
+  "status_code": 200,
+  "reason": "",
+  "request_params": null,
+  "request_json": {
+    "id": 113,
+    "userIds": [
+      "17585011179956000"
+    ],
+    "message": "接口自动化催办 2025-10-17 13:27:34"
+  },
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200
+  }
+}

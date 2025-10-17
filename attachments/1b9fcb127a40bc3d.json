@@ -1,0 +1,10 @@
+{
+  "case_id": "TC16",
+  "test": "test_task_audit",
+  "title": "审批任务通过",
+  "objective": "验证 /task/audit 能提交审批通过操作。",
+  "method": "POST",
+  "path": "/task/audit",
+  "precondition": "任务存在待审批记录，当前用户具备审批权限。",
+  "expected": "响应 200，返回成功消息。"
+}

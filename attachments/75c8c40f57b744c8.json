@@ -1,0 +1,311 @@
+{
+  "method": "GET",
+  "url": "https://imp.zjydit.com/api/task/detail",
+  "status_code": 200,
+  "reason": "",
+  "request_params": {
+    "id": 112
+  },
+  "request_json": null,
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200,
+    "data": {
+      "id": 112,
+      "name": " ",
+      "type": "内部管理事项",
+      "description": null,
+      "createDateTime": "2025-10-17 10:17:47",
+      "startDate": "2025-10-18",
+      "endDate": "2025-10-24",
+      "content": " ",
+      "target": " ",
+      "remark": "",
+      "initiatorId": "17585011179956000",
+      "initiator": {
+        "userId": "17585011179956000",
+        "name": "柯锦鸿",
+        "title": "测试工程师",
+        "jobNumber": "170",
+        "active": true,
+        "admin": false,
+        "avatar": "https://static-legacy.dingtalk.com/media/lADPBE1XZGmS9h_NA_DNAvM_755_1008.jpg",
+        "boss": false,
+        "email": null,
+        "hiredDate": 1758470400000,
+        "realAuthed": true,
+        "remark": "",
+        "senior": false,
+        "telephone": null,
+        "unionid": "2Vh9Nlq6jxrSlwQOdkuVBwiEiE",
+        "workPlace": "",
+        "depts": [
+          {
+            "id": 470549377,
+            "deptName": "技术开发部",
+            "pid": 666415973,
+            "children": null,
+            "userDeptList": null,
+            "managers": null,
+            "employees": null
+          }
+        ],
+        "permissions": null,
+        "roles": null,
+        "leave": false,
+        "onboardingDate": "2025-09-22"
+      },
+      "status": "进行中",
+      "completeDateTime": null,
+      "tags": [],
+      "attaches": [],
+      "executes": [
+        {
+          "id": 183,
+          "taskId": 112,
+          "executorId": "17361235733914947",
+          "executor": {
+            "userId": "17361235733914947",
+            "name": "方钺",
+            "title": "软件开发技术员",
+            "jobNumber": "102",
+            "active": true,
+            "admin": false,
+            "avatar": "",
+            "boss": false,
+            "email": null,
+            "hiredDate": 1736092800000,
+            "realAuthed": true,
+            "remark": null,
+            "senior": false,
+            "telephone": null,
+            "unionid": "feNGC2QnaYnC5TguAKYjpQiEiE",
+            "workPlace": null,
+            "depts": [
+              {
+                "id": 470549377,
+                "deptName": "技术开发部",
+                "pid": 666415973,
+                "children": null,
+                "userDeptList": null,
+                "managers": null,
+                "employees": null
+              }
+            ],
+            "permissions": null,
+            "roles": null,
+            "leave": false,
+            "onboardingDate": "2025-01-06"
+          },
+          "status": "执行中",
+          "attaches": [],
+          "comment": null,
+          "completeDateTime": null,
+          "read": false,
+          "todoId": 296
+        },
+        {
+          "id": 184,
+          "taskId": 112,
+          "executorId": "17304211589869906",
+          "executor": {
+            "userId": "17304211589869906",
+            "name": "傅炜男",
+            "title": "软件开发技术员",
+            "jobNumber": "98",
+            "active": true,
+            "admin": false,
+            "avatar": "https://static-legacy.dingtalk.com/media/lQDPM5EjUWJHeZHNAhzNAhywl8kUo7frJ0UHN_gQMTOGAA_540_540.jpg",
+            "boss": false,
+            "email": null,
+            "hiredDate": 1730390400000,
+            "realAuthed": true,
+            "remark": "",
+            "senior": false,
+            "telephone": null,
+            "unionid": "1l05PgkK5IJB7H8uX7iSUJQiEiE",
+            "workPlace": "",
+            "depts": [
+              {
+                "id": 470549377,
+                "deptName": "技术开发部",
+                "pid": 666415973,
+                "children": null,
+                "userDeptList": null,
+                "managers": null,
+                "employees": null
+              }
+            ],
+            "permissions": null,
+            "roles": null,
+            "leave": false,
+            "onboardingDate": "2024-11-01"
+          },
+          "status": "执行中",
+          "attaches": [],
+          "comment": null,
+          "completeDateTime": null,
+          "read": false,
+          "todoId": 297
+        },
+        {
+          "id": 185,
+          "taskId": 112,
+          "executorId": "17082164986889015",
+          "executor": {
+            "userId": "17082164986889015",
+            "name": "陈宇航",
+            "title": "软件开发技术员",
+            "jobNumber": "81",
+            "active": true,
+            "admin": false,
+            "avatar": "https://static-legacy.dingtalk.com/media/lQLPM5EuO1qiaNfNAYXNAYWwG3daQe1Uas0GgEwkyIiRAA_389_389.png",
+            "boss": false,
+            "email": null,
+            "hiredDate": 1708185600000,
+            "realAuthed": false,
+            "remark": "",
+            "senior": true,
+            "telephone": null,
+            "unionid": "Jte5aPiiiiXii8ko2lY8iPwlpQiEiE",
+            "workPlace": "",
+            "depts": [
+              {
+                "id": 470549377,
+                "deptName": "技术开发部",
+                "pid": 666415973,
+                "children": null,
+                "userDeptList": null,
+                "managers": null,
+                "employees": null
+              }
+            ],
+            "permissions": null,
+            "roles": null,
+            "leave": false,
+            "onboardingDate": "2024-02-18"
+          },
+          "status": "执行中",
+          "attaches": [],
+          "comment": null,
+          "completeDateTime": null,
+          "read": false,
+          "todoId": 298
+        }
+      ],
+      "auditInfos": [
+        {
+          "id": 98,
+          "taskId": 112,
+          "auditorId": "17585011179956000",
+          "auditor": {
+            "userId": "17585011179956000",
+            "name": "柯锦鸿",
+            "title": "测试工程师",
+            "jobNumber": "170",
+            "active": true,
+            "admin": false,
+            "avatar": "https://static-legacy.dingtalk.com/media/lADPBE1XZGmS9h_NA_DNAvM_755_1008.jpg",
+            "boss": false,
+            "email": null,
+            "hiredDate": 1758470400000,
+            "realAuthed": true,
+            "remark": "",
+            "senior": false,
+            "telephone": null,
+            "unionid": "2Vh9Nlq6jxrSlwQOdkuVBwiEiE",
+            "workPlace": "",
+            "depts": [
+              {
+                "id": 470549377,
+                "deptName": "技术开发部",
+                "pid": 666415973,
+                "children": null,
+                "userDeptList": null,
+                "managers": null,
+                "employees": null
+              }
+            ],
+            "permissions": null,
+            "roles": null,
+            "leave": false,
+            "onboardingDate": "2025-09-22"
+          },
+          "passed": false,
+          "read": false,
+          "todoId": null
+        }
+      ],
+      "auditLogs": [],
+      "copyerList": [],
+      "logs": [
+        {
+          "id": 833,
+          "taskId": 112,
+          "content": "新建了任务",
+          "createTime": "2025-10-17 10:17:47",
+          "createById": "17585011179956000",
+          "createBy": {
+            "userId": "17585011179956000",
+            "name": "柯锦鸿",
+            "title": "测试工程师",
+            "jobNumber": "170",
+            "active": true,
+            "admin": false,
+            "avatar": "https://static-legacy.dingtalk.com/media/lADPBE1XZGmS9h_NA_DNAvM_755_1008.jpg",
+            "boss": false,
+            "email": null,
+            "hiredDate": 1758470400000,
+            "realAuthed": true,
+            "remark": "",
+            "senior": false,
+            "telephone": null,
+            "unionid": "2Vh9Nlq6jxrSlwQOdkuVBwiEiE",
+            "workPlace": "",
+            "depts": null,
+            "permissions": null,
+            "roles": null,
+            "leave": false,
+            "onboardingDate": "2025-09-22"
+          }
+        }
+      ],
+      "projects": [],
+      "enableAutoMessage": false,
+      "hours": 24,
+      "scheduledTaskId": null,
+      "parentId": null,
+      "children": [],
+      "button": {
+        "createSubTask": false,
+        "executorSubmit": false,
+        "revokeSubmit": true,
+        "edit": true,
+        "addCopyer": true,
+        "audit": false,
+        "urge": true,
+        "close": true,
+        "open": false,
+        "changeExecutor": true,
+        "inviteExecutor": true,
+        "end": false,
+        "cancelAudit": false,
+        "complete": false,
+        "removeExecute": true
+      },
+      "overTime": null,
+      "config": {
+        "executorAutoSubmit": false,
+        "anyExecuteSubmittedToNext": false,
+        "onStartToExecutorsMessage": "${taskName}任务等待执行",
+        "onStartCCMessage": "${taskName}任务已开始",
+        "onEndCCMessage": "${taskName}任务已结束",
+        "autoRemindMessage": "${taskName}尚未提交",
+        "initiatorCanChangeExecutor": true,
+        "executorCanInviteNewExecutor": true,
+        "executorCanStartSubTask": true,
+        "initiatorCanCompleteTask": false
+      }
+    }
+  }
+}

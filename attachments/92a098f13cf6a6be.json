@@ -1,0 +1,10 @@
+{
+  "case_id": "TC17",
+  "test": "test_task_audit_cancel",
+  "title": "撤销审批结果",
+  "objective": "验证 /task/audit/cancel 能撤销上一审批动作。",
+  "method": "POST",
+  "path": "/task/audit/cancel",
+  "precondition": "任务存在可撤销的审批记录。",
+  "expected": "响应 200，返回成功消息。"
+}

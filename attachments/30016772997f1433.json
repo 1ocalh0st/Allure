@@ -1,0 +1,10 @@
+{
+  "case_id": "TC05",
+  "test": "test_task_execute_id_to_task_id",
+  "title": "执行记录反查任务",
+  "objective": "验证 /task/executeIdToTaskId 可通过执行记录 ID 获取任务 ID。",
+  "method": "GET",
+  "path": "/task/executeIdToTaskId",
+  "precondition": "任务存在执行记录。",
+  "expected": "响应 200 且 data 等于目标任务 ID。"
+}

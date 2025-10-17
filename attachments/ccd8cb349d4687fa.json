@@ -1,0 +1,10 @@
+{
+  "case_id": "TC20",
+  "test": "test_task_execute_attach_comment_save",
+  "title": "保存执行备注与附件",
+  "objective": "验证 /task/execute/attachAndComment/save 能提交执行说明（若缺少必填附件可能返回业务提示）。",
+  "method": "POST",
+  "path": "/task/execute/attachAndComment/save",
+  "precondition": "执行记录存在。",
+  "expected": "响应 200 或 400 且结构符合 AjaxResult。"
+}

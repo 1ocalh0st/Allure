@@ -1,0 +1,10 @@
+{
+  "case_id": "TC09",
+  "test": "test_task_template_add",
+  "title": "新增任务模板",
+  "objective": "验证 /task/template/add 可基于已有模板新增条目。",
+  "method": "POST",
+  "path": "/task/template/add",
+  "precondition": "具备模板示例用于复制生成新模板。",
+  "expected": "响应 200，新增模板可在后续查询中检索到。"
+}

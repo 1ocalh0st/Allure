@@ -1,0 +1,10 @@
+{
+  "case_id": "TC21",
+  "test": "test_task_execute_change",
+  "title": "更换执行人",
+  "objective": "验证 /task/execute/change 可将执行人切换为其他用户。",
+  "method": "POST",
+  "path": "/task/execute/change",
+  "precondition": "任务至少有两个执行人供切换。",
+  "expected": "响应 200，并可恢复为原执行人。"
+}

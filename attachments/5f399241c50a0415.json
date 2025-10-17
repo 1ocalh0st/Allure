@@ -1,0 +1,10 @@
+{
+  "case_id": "TC23",
+  "test": "test_task_execute_remove",
+  "title": "移除执行人并恢复",
+  "objective": "验证 /task/execute/remove 可移除执行人且事后可重新邀请。",
+  "method": "POST",
+  "path": "/task/execute/remove",
+  "precondition": "任务存在多个执行人。",
+  "expected": "响应 200，随后重新邀请成功。"
+}

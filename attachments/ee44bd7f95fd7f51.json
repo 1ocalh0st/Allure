@@ -1,0 +1,10 @@
+{
+  "case_id": "TC08",
+  "test": "test_task_template_query",
+  "title": "查询任务模板列表",
+  "objective": "验证 /task/template/query 返回模板集合。",
+  "method": "GET",
+  "path": "/task/template/query",
+  "precondition": "系统中存在至少一个任务模板。",
+  "expected": "响应 200，data 为模板列表。"
+}

@@ -1,0 +1,10 @@
+{
+  "case_id": "TC13",
+  "test": "test_task_close_then_reopen",
+  "title": "关闭任务后恢复",
+  "objective": "验证 /task/close 能关闭任务且事后可以重新打开。",
+  "method": "POST",
+  "path": "/task/close",
+  "precondition": "任务存在并允许关闭。",
+  "expected": "响应 200，随后通过 /task/open 可恢复状态。"
+}

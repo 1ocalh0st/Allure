@@ -1,0 +1,10 @@
+{
+  "case_id": "TC14",
+  "test": "test_task_end_then_reopen",
+  "title": "完结任务后恢复",
+  "objective": "验证 /task/end 能完结任务且可重新打开。",
+  "method": "POST",
+  "path": "/task/end",
+  "precondition": "任务存在并允许完结。",
+  "expected": "响应 200，随后通过 /task/open 可恢复执行。"
+}

@@ -1,0 +1,15 @@
+{
+  "method": "POST",
+  "url": "https://imp.zjydit.com/api/task/execute/invite",
+  "status_code": 200,
+  "reason": "",
+  "request_params": {
+    "taskId": 113,
+    "executorId": "17585011179956000"
+  },
+  "request_json": null,
+  "response_json": {
+    "msg": "操作成功",
+    "code": 200
+  }
+}

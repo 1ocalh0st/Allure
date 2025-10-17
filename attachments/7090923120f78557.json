@@ -1,0 +1,10 @@
+{
+  "case_id": "TC15",
+  "test": "test_task_complete_then_reopen",
+  "title": "完成任务后恢复",
+  "objective": "验证 /task/complete 能标记完成并可重新激活任务。",
+  "method": "POST",
+  "path": "/task/complete",
+  "precondition": "任务存在并允许完成。",
+  "expected": "响应 200，随后通过 /task/open 可恢复执行。"
+}

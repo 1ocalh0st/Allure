@@ -1,0 +1,10 @@
+{
+  "case_id": "TC04",
+  "test": "test_task_query_execute",
+  "title": "查询任务执行人与审批人信息",
+  "objective": "验证 /task/queryExecute 返回执行人列表。",
+  "method": "GET",
+  "path": "/task/queryExecute",
+  "precondition": "任务存在，且已分配执行人。",
+  "expected": "响应 200，data 为执行人/审批人信息数组。"
+}

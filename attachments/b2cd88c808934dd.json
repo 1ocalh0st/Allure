@@ -1,0 +1,10 @@
+{
+  "case_id": "TC24",
+  "test": "test_task_copyer_add",
+  "title": "新增抄送人",
+  "objective": "验证 /task/copyer/add 可添加抄送用户。",
+  "method": "POST",
+  "path": "/task/copyer/add",
+  "precondition": "任务存在；提供的用户可以作为抄送人。",
+  "expected": "响应 200，返回成功消息。"
+}
